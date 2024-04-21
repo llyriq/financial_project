@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Main {
     static Scanner scanner = new Scanner(System.in);
     static MonthlyReport monthlyReport = new MonthlyReport();
+    static YearlyReport yearlyReport = new YearlyReport();
     static String resourcesPath = "src/main/resources";
     static File resources = new File(resourcesPath);
 
@@ -60,11 +61,21 @@ public class Main {
         System.out.println("Все месячные отчёты загружены. Для продолжения нажмите \"Enter\".");
         scanner.nextLine();
         scanner.nextLine();
-
     }
 
     public static void readYear(){
+        String[] reports = resources.list();
 
+        assert reports != null;
+        for (String report : reports) {
+            if(report.charAt(0) == 'y') {
+                yearlyReport.readYear(resourcesPath, report);
+            }
+        }
+
+        System.out.println("Все годовые отчёты загружены. Для продолжения нажмите \"Enter\".");
+        scanner.nextLine();
+        scanner.nextLine();
     }
 
     public static void inspectReports(){
@@ -72,7 +83,11 @@ public class Main {
     }
 
     public static void mountReportsInfo(){
+        monthlyReport.monthInfo();
 
+        System.out.println("Для продолжения нажмите \"Enter\".");
+        scanner.nextLine();
+        scanner.nextLine();
     }
 
     public static void yearReportInfo(){

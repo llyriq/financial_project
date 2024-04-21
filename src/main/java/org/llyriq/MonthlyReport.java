@@ -43,7 +43,30 @@ public class MonthlyReport {
         }
     }
 
-    public void showData(){
-        System.out.println(data);
+    public void monthInfo(){
+        for(int key : data.keySet()){
+            String[] nameMonths = {"Январь", "Февраль", "Март", "Апрель",
+                                    "Май", "Июнь", "Июль", "Август",
+                                    "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
+            ArrayList<MonthData> monthData = data.get(key);
+            int maxProfit = 0;
+            String nameProfit = "";
+            int maxWaste = 0;
+            String nameWaste = "";
+
+            for (MonthData month : monthData) {
+                if (!month.is_expense && month.quantity*month.price > maxProfit){
+                    maxProfit = month.quantity*month.price;
+                    nameProfit = month.item_name;
+                }
+                if (month.is_expense && month.quantity*month.price > maxWaste){
+                    maxWaste = month.quantity*month.price;
+                    nameWaste = month.item_name;
+                }
+            }
+            System.out.println("Информацию по месяцу: " + nameMonths[--key]);
+            System.out.println("Самый прибыльный товар - " + nameProfit + " на сумму " + maxProfit);
+            System.out.println("Самая большая трата - " + nameWaste + " на сумму " + maxWaste);
+        }
     }
 }
