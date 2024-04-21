@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17f1c250-177f-4854-88dd-67b3f79db199" name="Changes" comment="Add data">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202302.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202302.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202303.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202303.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202304.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202304.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202305.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202305.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202306.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202306.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202307.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202307.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202308.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202308.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202309.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202309.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202310.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202310.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202311.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202311.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202312.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202312.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/llyriq/Dialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/llyriq/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/llyriq/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/llyriq/MonthlyReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/llyriq/MonthlyReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202301.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202301.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +43,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "preferences.general"
@@ -88,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713682772567</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add data">
+      <option name="closed" value="true" />
+      <created>1713685218769</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713685218769</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
