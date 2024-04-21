@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f1c250-177f-4854-88dd-67b3f79db199" name="Changes" comment="Start logic" />
+    <list default="true" id="17f1c250-177f-4854-88dd-67b3f79db199" name="Changes" comment="Add data">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202302.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202302.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202303.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202303.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202304.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202304.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202305.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202305.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202306.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202306.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202307.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202307.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202308.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202308.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202309.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202309.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202310.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202310.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202311.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202311.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m.202312.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/m.202312.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "llyriq"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/llyriq/financial_project.git",
+    "accountId": "639f8959-7fa0-412a-b3ae-9b96c33f2c89"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 3
@@ -47,7 +72,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713682345110</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Start logic">
+      <option name="closed" value="true" />
+      <created>1713682408932</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713682408932</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add data">
+      <option name="closed" value="true" />
+      <created>1713682772567</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713682772567</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -55,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start logic" />
+    <MESSAGE value="Add data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add data" />
   </component>
 </project>
