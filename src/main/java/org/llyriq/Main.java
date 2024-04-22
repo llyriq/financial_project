@@ -91,6 +91,10 @@ public class Main {
     }
 
     public static void yearReportInfo(){
+        yearlyReport.yearInfo();
 
+        System.out.println("Для продолжения нажмите \"Enter\".");
+        scanner.nextLine();
+        scanner.nextLine();
     }
 }

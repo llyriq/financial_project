@@ -30,4 +30,40 @@ public class YearlyReport {
             throw new RuntimeException(e);
         }
     }
+
+    public void yearInfo() {
+        String[] nameMonths = {"Январь", "Февраль", "Март", "Апрель",
+                "Май", "Июнь", "Июль", "Август",
+                "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
+        int absoluteProfit = 0;
+        int profit = 0;
+        int waste = 0;
+        int month = 0;
+        int count = 0;
+
+        for (YearData yearData : data) {
+            if (month != yearData.month) {
+                if (month != 0) {
+                    System.out.println("Прибыль за " + nameMonths[--month] + " - " + absoluteProfit);
+                }
+                absoluteProfit = 0;
+                month = yearData.month;
+            }
+            if (yearData.is_expense) {
+                absoluteProfit -= yearData.amount;
+                waste += yearData.amount;
+            } else {
+                absoluteProfit += yearData.amount;
+                profit += yearData.amount;
+            }
+            count++;
+        }
+
+        profit /= count;
+        waste /= count;
+
+        System.out.println("Средний расход за все месяцы - " + waste);
+        System.out.println("Средний доход за все месяцы - " + profit);
+
+    }
 }
