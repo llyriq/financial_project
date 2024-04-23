@@ -48,18 +48,18 @@ public class MonthlyReport {
             String[] nameMonths = {"Январь", "Февраль", "Март", "Апрель",
                                     "Май", "Июнь", "Июль", "Август",
                                     "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
-            ArrayList<MonthData> monthData = data.get(key);
+            ArrayList<MonthData> monthData = data.get(key); //Получаем данные одного месяца
             int maxProfit = 0;
             String nameProfit = "";
             int maxWaste = 0;
             String nameWaste = "";
 
-            for (MonthData month : monthData) {
-                if (!month.is_expense && month.quantity*month.price > maxProfit){
+            for (MonthData month : monthData) {//Пробегаемся по всем данным
+                if (!month.is_expense && month.quantity*month.price > maxProfit){//Если это не трата и сумма больше, то обновляем максимум
                     maxProfit = month.quantity*month.price;
                     nameProfit = month.item_name;
                 }
-                if (month.is_expense && month.quantity*month.price > maxWaste){
+                if (month.is_expense && month.quantity*month.price > maxWaste){//Если это трата и сумма больше, то обновляем максимум
                     maxWaste = month.quantity*month.price;
                     nameWaste = month.item_name;
                 }

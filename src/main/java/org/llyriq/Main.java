@@ -79,7 +79,11 @@ public class Main {
     }
 
     public static void inspectReports(){
+        yearlyReport.monthlyCheck(monthlyReport);
 
+        System.out.println("Для продолжения нажмите \"Enter\".");
+        scanner.nextLine();
+        scanner.nextLine();
     }
 
     public static void mountReportsInfo(){

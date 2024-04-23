@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class YearlyReport {
@@ -41,7 +42,11 @@ public class YearlyReport {
         int month = 0;
         int count = 0;
 
-        for (YearData yearData : data) {
+        for (YearData yearData : data) { //Пробегаем по всем данным года
+            /*
+            Учитывая, что формат данных подразумевает по 2 строки на месяц (доходы и траты),
+            вывод происходит после каждой смены месяца
+             */
             if (month != yearData.month) {
                 if (month != 0) {
                     System.out.println("Прибыль за " + nameMonths[--month] + " - " + absoluteProfit);
@@ -64,6 +69,49 @@ public class YearlyReport {
 
         System.out.println("Средний расход за все месяцы - " + waste);
         System.out.println("Средний доход за все месяцы - " + profit);
+    }
 
+    public void monthlyCheck(MonthlyReport monthlyReport) {
+        HashMap<Integer, ArrayList<MonthData>> dataReport = monthlyReport.data;//получаем данные всех месяцев
+        boolean checkFail = false;
+        String failedReports = "";
+        for(int key : dataReport.keySet()){//пробегаем по данным месяцев
+            String[] nameMonths = {"Январь", "Февраль", "Март", "Апрель",
+                    "Май", "Июнь", "Июль", "Август",
+                    "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
+            ArrayList<MonthData> monthData = dataReport.get(key);
+            int profit = 0;
+            int expense = 0;
+
+            for (MonthData month : monthData) { //подсчитывается сумма доходов/расходов
+                if (!month.is_expense){
+                    profit += month.quantity*month.price;
+                }
+                if (month.is_expense){
+                    expense += month.quantity*month.price;
+                }
+            }
+
+            for (YearData yearData : data) {//полученные суммы сверяем с данными годового отчёта
+                if (yearData.month == key) {
+                    if (yearData.is_expense) {
+                        if (yearData.amount != expense) {
+                            checkFail = true;
+                            failedReports += nameMonths[key-1] + "(Траты), ";
+                        }
+                    } else {
+                        if (yearData.amount != profit) {
+                            checkFail = true;
+                            failedReports += nameMonths[key-1] + "(Доходы), ";
+                        }
+                    }
+                }
+            }
+        }
+        if (checkFail) {
+            System.out.println("Обнаружены несовпадения в месяцах: " + failedReports.substring(0, failedReports.length()-2));
+        } else {
+            System.out.println("Сверка выполнена успешно. Несовпадений не найдено.");
+        }
     }
 }

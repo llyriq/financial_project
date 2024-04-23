@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f1c250-177f-4854-88dd-67b3f79db199" name="Changes" comment="Создана логика для считывания годовых отчётов и вывод информации месячных отчётов">
+    <list default="true" id="17f1c250-177f-4854-88dd-67b3f79db199" name="Changes" comment="Создана логика для вывода информации годовых отчётов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/llyriq/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/llyriq/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/llyriq/YearlyReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/llyriq/YearlyReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/y.2023.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/y.2023.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713731170295</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Создана логика для вывода информации годовых отчётов">
+      <option name="closed" value="true" />
+      <created>1713820011892</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713820011892</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -123,7 +132,8 @@
     <MESSAGE value="Add data" />
     <MESSAGE value="Создана логика для считывания месячных отчётов" />
     <MESSAGE value="Создана логика для считывания годовых отчётов и вывод информации месячных отчётов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создана логика для считывания годовых отчётов и вывод информации месячных отчётов" />
+    <MESSAGE value="Создана логика для вывода информации годовых отчётов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создана логика для вывода информации годовых отчётов" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
